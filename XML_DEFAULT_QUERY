@@ -32,9 +32,7 @@ procedure sql2xml(in_app_id  number,
      where page_id = in_page_id
        and application_id = in_app_id
        and source_type = 'Interactive Report';
-  
-    get_default_columns_labels;
-  
+    
     select sql_query
       into v_sql_query
       from apex_application_page_ir
